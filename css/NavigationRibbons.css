@@ -28,7 +28,7 @@
     left: 0px;
     font-size: 15px;
     color: #8e8071;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
     background-color: #fff;
     border-top-left-radius: 5px;
@@ -43,6 +43,10 @@
     box-shadow: 0 0 12px #ab8b6e;
     -moz-box-shadow: 0 0 12px #ab8b6e;
     -webkit-box-shadow: 0 0 12px #ab8b6e;
+}
+
+.NavigationMenuMyProfileHead {
+    border-bottom: solid 3px #4daf7b;
 }
 
 .NavigationMenuMyProfile:hover {
@@ -148,7 +152,7 @@
     padding-left: 60px;
     padding-top: 26px;
     color: #8e8071;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
     background-image: url('../img/NavigationRibbonsSpritesheetIco.png');
     background-position: -128px -128px;
@@ -182,6 +186,8 @@
     box-shadow: 0 0 12px #ab8b6e;
     -webkit-box-shadow: 0 0 12px #ab8b6e;
     -moz-box-shadow: 0 0 12px #ab8b6e;
+
+
 }
 .NavigationRibbonsSquareFlag {
     position: absolute;
@@ -192,6 +198,40 @@
     width: 71px;
     height: 72px;
     z-index:1;
+    -webkit-animation: Sale 1s linear infinite alternate;
+    -o-animation: Sale 1s linear infinite alternate;
+    -moz-animation: Sale 1s linear infinite alternate;
+}
+
+@-webkit-keyframes Sale {
+    0% {
+        background: url("../img/NavigationRibbonsSaleFlagGreen.png") no-repeat;
+        background-position: right center;
+     }
+    100%{
+        background: url("../img/NavigationRibbonsSaleFlagRed.png") no-repeat;
+        background-position: right center;
+    }
+}
+@-o-keyframes Sale {
+    0% {
+        background: url("../img/NavigationRibbonsSaleFlagGreen.png") no-repeat;
+        background-position: right center;
+    }
+    100%{
+        background: url("../img/NavigationRibbonsSaleFlagRed.png") no-repeat;
+        background-position: right center;
+    }
+}
+@-moz-keyframes Sale {
+    0% {
+        background: url("../img/NavigationRibbonsSaleFlagGreen.png") no-repeat;
+        background-position: right center;
+    }
+    100%{
+        background: url("../img/NavigationRibbonsSaleFlagRed.png") no-repeat;
+        background-position: right center;
+    }
 }
 
 .NavigationRibbonsSquareTextSale,

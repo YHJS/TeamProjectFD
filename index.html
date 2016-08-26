@@ -8,11 +8,11 @@
     <link rel="stylesheet" type="text/css" href="css/Menu.css">
     <link rel="stylesheet" type="text/css" href="css/NavigationRibbons.css">
     <link rel="stylesheet" type="text/css" href="css/BlogPost.css">
-    <link rel="stylesheet" type="text/css" href="css/graphic.css">
+    <link rel="stylesheet" type="text/css" href="css/Graphic.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js" defer></script>
     <script type="text/javascript" src="script/ChartDonats.js" defer></script>
     <script type="text/javascript" src="script/Profile.js" defer></script>
-    
+
     <title>SelectionWidgets</title>
 </head>
 <body>
@@ -170,7 +170,7 @@
                             <li class="ListMenuContainerStatistics">
                                 <a>Web Statistics</a>
                                 <a>Edit</a>
-                                <a>Cansel</a>
+                                <a>Cancel</a>
                             </li>
                             <li class="ListMenuContainerSettings">
                                 <a>Upload Settings</a>
@@ -378,15 +378,16 @@
                         <label for="ContactFormFormMessage">
                             Message
                         </label>
-                        <textarea maxlength="200" id="ContactFormFormMessage" class="ContactFormFormMessage ContactFormTextWrite" placeholder="  Leav yoeur message here">
-                        </textarea>
+                        <textarea maxlength="200" id="ContactFormFormMessage" class="ContactFormFormMessage ContactFormTextWrite" placeholder="  Leav yoeur message here"></textarea>
+
                     </div>
                     <div class="ContactFormSend">
-
-                        <input type="checkbox" value="Save a copy" class="ContactFormSendSave" checked>
+                        <label id="ContactFormSaveCopy">
+                        <input type="checkbox" for="ContactFormSaveCopy" value="Save a copy" class="ContactFormSendSave" checked>
                         <span class="ContactFormSendSaveText">
                             Save a copy
                         </span>
+                        </label>
                         <button type="submit" class="ContactFormSendButton">Send Mail</button>
                     </div>
                 </form>

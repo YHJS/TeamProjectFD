@@ -1,3 +1,13 @@
+.Menu {
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 64px;
+    width: 628px;
+    border-radius: 5px;
+    z-index: 10;
+}
 
 .MenuList {
     padding-left: 0;
@@ -10,7 +20,9 @@
     width: 157px;
     border-right: 1px solid #f8f3f0;
     position: relative;
-    -webkit-box-sizing: border-box ;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .MenuList li:last-child {
@@ -28,20 +40,26 @@
     border-bottom: 5px solid transparent;
     line-height: 60px;
     transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
 }
 
 .MenuList > li > a:hover {
     background-color: #f8f3f0;
     border-color: #4daf7b;
-
 }
 
 .MenuList > li:first-child > a {
     border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
 }
 
 .MenuList > li:last-child > a {
     border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
 }
 
 .MenuListSubmenu{
@@ -53,8 +71,7 @@
     top: 65px;
 }
 
-.MenuList >li:hover .MenuListSubmenu
-{
+.MenuList >li:hover .MenuListSubmenu {
     display: block;
 }
 
@@ -73,6 +90,9 @@
     border-bottom: 2px solid transparent;
     padding: 16px 0 13px;
     transition: all 200ms linear;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
     background-color: #fff;
 }
 
@@ -83,9 +103,14 @@
 
 .MenuListSubmenu > li:first-child a {
     border-radius:  5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+
 }
 .MenuListSubmenu > li:last-child a {
     border-radius:  0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
 }
 
 .MenuListIcon {
@@ -140,11 +165,20 @@
     position: relative;
     top: -14px;
     animation: pulse-red 2.5s infinite ease-in;
+    -webkit-animation: pulse-red 2.5s infinite ease-in;
+    -o-animation: pulse-red 2.5s infinite ease-in;
+    -moz-animation: pulse-red 2.5s infinite ease-in;
 }
 
 @keyframes pulse-red {
     0% { box-shadow: 0 0px 5px rgba(207, 8, 28, 0.5); }
+    0% { -webkit-box-shadow: 0 0px 5px rgba(207, 8, 28, 0.5); }
+    0% { -moz-box-shadow: 0 0px 5px rgba(207, 8, 28, 0.5); }
     50% { box-shadow: 0 0px 20px rgba(207, 8, 28, 0.8); }
+    50% {-webkit-box-shadow: 0 0px 20px rgba(207, 8, 28, 0.8); }
+    50% { -moz-box-shadow: 0 0px 20px rgba(207, 8, 28, 0.8); }
     100% { box-shadow: 0 0px 5px rgba(207, 8, 28, 0.5); }
+    100% { -webkit-box-shadow: 0 0px 5px rgba(207, 8, 28, 0.5); }
+    100% { -moz-box-shadow: 0 0px 5px rgba(207, 8, 28, 0.5); }
 }
 

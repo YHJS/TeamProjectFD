@@ -1,3 +1,18 @@
+.ContactForm {
+    background-color: #fff;
+    position: absolute;
+    font-family: "OpenSansRegular", Arial, sans-serif;
+    font-size: 16px;
+    color: #8e8071;
+    line-height: 2;
+    color: #8e8071;
+    bottom: 0px;
+    right: 0px;
+    height: 460px;
+    width: 370px;
+    border-radius: 5px;
+}
+
 .ContactFormForm {
     width: 100%;
     height: 372px;
@@ -6,13 +21,20 @@
     padding-left: 30px;
     padding-right: 30px;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
 }
+
 .ContactFormSend{
     width: 100%;
     height: 88px;
     background-color: #f8f3f0;
     border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
 }
 input {
     height: 1.2em;
@@ -22,8 +44,12 @@ input[name="q"] {
     height: 48px;
     width: 100%;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     border: 1px solid #e5d4c2;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 input[type="image"] {
     left: 300px;
@@ -41,6 +67,8 @@ button[value="Hello@me.com"]{
     height: 35px;
     background-color: #5e90af;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border: 1px  solid #5e90af;
     color: #ffffff;
     font-family: "OpenSansRegular", Arial, Helvetica, sans-serif;
@@ -54,6 +82,8 @@ button[value="Andy@me.com"]{
     height: 35px;
     background-color: #4daf7b;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border: 1px  solid #4daf7b;
     color: #ffffff;
     font-family: "OpenSansRegular", Arial, Helvetica, sans-serif;
@@ -74,7 +104,11 @@ button[value="Andy@me.com"]{
     font-size: 14px;
     border: 1px solid #e5d4c2;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     width: 100%;
     font-family: "OpenSansRegular", Arial, Helvetica, sans-serif;
 }
@@ -93,6 +127,8 @@ button[value="Andy@me.com"]{
     height: 44px;
     border: 2px outset #e6603c;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     color: #ffffff;
     margin-right: 30px;
     margin-top: 20px;

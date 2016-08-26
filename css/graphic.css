@@ -1,62 +1,14 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 .Graphic {
-	position: absolute;
-	background-color: #fff;
+	position: relative;
 	width: 283px;
 	height: 435px;
 	margin: 0 auto;
+	background-color: #fff;
 	top: 0px;
 	left: 0px;
-	box-shadow: 0 0 12px #ab8b6e;
 	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 }
 .GraphicTop {
 	border-radius: 5px 5px 0 0;
@@ -74,23 +26,503 @@ table {
 	background-color: #54bc75;
 	z-index: 2;
 }
+@-webkit-keyframes Charts {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-moz-keyframes Charts {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-o-keyframes Charts {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@keyframes Charts {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-webkit-keyframes ChartsUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-moz-keyframes ChartsUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-o-keyframes ChartsUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@keyframes ChartsUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+.GraphicTopOverheadGeneralChartsUp {
+	width: 283px;
+	height: 151px;
+	position: absolute;
+	z-index: 5;
+	-webkit-transition: opacity 3s ease-in-out;
+	-moz-transition: opacity 3s ease-in-out;
+	-o-transition: opacity 3s ease-in-out;
+	transition: opacity 3s ease-in-out;
+	-webkit-animation-name: ChartsUp;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-delay: -3s;
+
+	-moz-animation-name: ChartsUp;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 3s;
+	-moz-animation-direction: alternate;
+	-moz-animation-delay: -3s;
+
+	-o-animation-name: ChartsUp;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+	-o-animation-duration: 3s;
+	-o-animation-direction: alternate;
+	-o-animation-delay: -3s;
+
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-delay: -3s;
+}
 .GraphicTopOverheadGeneralCharts {
-	width: 241px;
-	height: 77px;
+	width: 283px;
+	height: 151px;
 	position: absolute;
 	z-index: 4;
+	-webkit-transition: opacity 3s ease-in-out;
+	-moz-transition: opacity 3s ease-in-out;
+	-o-transition: opacity 3s ease-in-out;
+	transition: opacity 3s ease-in-out;
+	-webkit-animation-name: Charts;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-delay: 0s;
+
+	-moz-animation-name: Charts;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 3s;
+	-moz-animation-direction: alternate;
+	-moz-animation-delay: 0s;
+
+	-o-animation-name: Charts;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+	-o-animation-duration: 3s;
+	-o-animation-direction: alternate;
+	-o-animation-delay: 0s;
+
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-delay: 0s;
+}
+@-webkit-keyframes Graphic {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-moz-keyframes Graphic {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-o-keyframes Graphic {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@keyframes Graphic {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-webkit-keyframes GraphicUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-moz-keyframes GraphicUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-o-keyframes GraphicUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@keyframes GraphicUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
 }
 .GraphicTopOverheadGeneralGraphic {
 	width: 283px;
 	height: 151px;
+	top:0px;
 	position: absolute;
 	z-index: 3;
-	
+	-webkit-animation-name: Graphic;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-delay: 0s;
+
+	-moz-animation-name: Graphic;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 3s;
+	-moz-animation-direction: alternate;
+	-moz-animation-delay: 0s;
+
+	-o-animation-name: Graphic;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+	-o-animation-duration: 3s;
+	-o-animation-direction: alternate;
+	-o-animation-delay: 0s;
+
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-delay: 0s;
+}
+.GraphicTopOverheadGeneralGraphicUp {
+	width: 283px;
+	height: 151px;
+	top:0px;
+	position: absolute;
+	-webkit-animation-name: GraphicUp;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-delay: -3s;
+
+	-moz-animation-name: GraphicUp;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 3s;
+	-moz-animation-direction: alternate;
+	-moz-animation-delay: -3s;
+
+	-o-animation-name: GraphicUp;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+	-o-animation-duration: 3s;
+	-o-animation-direction: alternate;
+	-o-animation-delay: -3s;
+
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-delay: -3s;
 }
 .GraphicTopOverheadGeneralTrades {
-	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-family: Open Sans, Arial, sans-serif;
 	color: #fff;
 	font-size: 17px;
+}
+@-webkit-keyframes General {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-moz-keyframes General {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-o-keyframes General {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@keyframes General {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+@-webkit-keyframes GeneralUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-moz-keyframes GeneralUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-o-keyframes GeneralUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@keyframes GeneralUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
 }
 .GraphicTopOverheadGeneral {
 	position: absolute;
@@ -98,7 +530,183 @@ table {
 	height: 17px;
 	top: 22px;
 	left: 18px;
-	
+	-webkit-animation-name: General;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-delay: 0s;
+
+	-moz-animation-name: General;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 3s;
+	-moz-animation-direction: alternate;
+	-moz-animation-delay: 0s;
+
+	-o-animation-name: General;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+	-o-animation-duration: 3s;
+	-o-animation-direction: alternate;
+	-o-animation-delay: 0s;
+
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-delay: 0s;
+}
+.GraphicTopOverheadGeneralUp {
+	position: absolute;
+	width:90px;
+	height: 17px;
+	top: 22px;
+	left: 18px;
+	-webkit-animation-name: GeneralUp;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-delay: -3s;
+
+	-moz-animation-name: GeneralUp;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 3s;
+	-moz-animation-direction: alternate;
+	-moz-animation-delay: -3s;
+
+	-o-animation-name: GeneralUp;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+	-o-animation-duration: 3s;
+	-o-animation-direction: alternate;
+	-o-animation-delay: -3s;
+
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-delay: -3s;
+}
+@-webkit-keyframes Percents {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-moz-keyframes Percents {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-o-keyframes Percents {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@keyframes Percents {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+@-webkit-keyframes PercentsUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-moz-keyframes PercentsUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@-o-keyframes PercentsUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+@keyframes PercentsUp {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
 }
 .GraphicTopOverheadGeneralTradesPercents {
 	position: absolute;
@@ -106,9 +714,71 @@ table {
 	height: 10px;
 	top: 45px;
 	left: 25px;
-	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-family: "OpenSansRegular", Arial, sans-serif;
 	font-size: 10px;
 	color: #b7dfc2;
+	-webkit-animation-name: Percents;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-delay: 0s;
+
+	-moz-animation-name: Percents;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 3s;
+	-moz-animation-direction: alternate;
+	-moz-animation-delay: 0s;
+
+	-o-animation-name: Percents;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+	-o-animation-duration: 3s;
+	-o-animation-direction: alternate;
+	-o-animation-delay: 0s;
+
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-delay: 0s;
+}
+.GraphicTopOverheadGeneralTradesPercentsUp {
+	position: absolute;
+	width:90px;
+	height: 10px;
+	top: 45px;
+	left: 25px;
+	font-family: "OpenSansRegular", Arial, sans-serif;
+	font-size: 10px;
+	color: #b7dfc2;
+	-webkit-animation-name: PercentsUp;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-delay: -3s;
+
+	-moz-animation-name: PercentsUp;
+	-moz-animation-timing-function: ease-in-out;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-duration: 3s;
+	-moz-animation-direction: alternate;
+	-moz-animation-delay: -3s;
+
+	-o-animation-name: PercentsUp;
+	-o-animation-timing-function: ease-in-out;
+	-o-animation-iteration-count: infinite;
+	-o-animation-duration: 3s;
+	-o-animation-direction: alternate;
+	-o-animation-delay: -3s;
+
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+	animation-delay: -3s;
 }
 .GraphicBotton {
 	position: absolute;
@@ -121,7 +791,7 @@ table {
 	height: 14px;
 	top: 185px;
 	left: 21px;
-	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-family: "OpenSansRegular", Arial, sans-serif;
 	font-size: 11px;
 	color: #b5aca2;
 }
@@ -131,7 +801,7 @@ table {
 	height: 14px;
 	top: 199px;
 	left: 21px;
-	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-family: "OpenSansRegular", Arial, sans-serif;
 	font-size: 17px;
 	color: #8e8071;
 }
@@ -152,7 +822,7 @@ table {
 	background-color: #f6f0ec;
 }
 .GraphicBottonTradesValue {
-	font-family: 'OpenSansSemiBold', Arial, sans-serif;
+	font-family: "OpenSansBold", Arial, sans-serif;
 	color: #897869;
 	font-size: 14px;
 	padding: 1;
@@ -161,7 +831,7 @@ table {
 	padding: 16px 0 0 0;
 }
 .GraphicBottonTradesDescription {
-	font-family: 'OpenSansSemiBold', Arial, sans-serif;
+	font-family: "OpenSansBold", Arial, sans-serif;
 	color: #a79583;
 	font-size: 10px;
 	display: block;
@@ -174,7 +844,7 @@ table {
 	left: 21px;
 	width: 124px;
 	height: 62px;
-	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-family: "OpenSansRegular", Arial, sans-serif;
 	font-size: 13px;
 	display: inline-block;
 }
@@ -185,7 +855,7 @@ table {
 	left: 168px;
 	width: 94px;
 	height: 62px;
-	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-family: "OpenSansRegular", Arial, sans-serif;
 	font-size: 13px;
 }
 .GraphicBottonChangesTrades {
@@ -219,7 +889,7 @@ table {
 	height: 34px;
 }
 .GraphicBottonChangesTradesValue {
-	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-family: "OpenSansRegular", Arial, sans-serif;
 	color: #ffffff;
 	font-size: 14px;
 	padding: 9px 19px;

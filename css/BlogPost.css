@@ -1,4 +1,3 @@
-
 .BlogPost{
 	position:absolute;
 	top: 0px;
@@ -7,6 +6,8 @@
 	height:392px;
 	background-color:#FFFFFF;
 	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
 	z-index:250;
 }	
 .BlogPostBackground{
@@ -15,6 +16,8 @@
 	height:204px;
 	background-image: url(../img/BlogPostBackground.png);
 	border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
 }
 .BlogPostContentAvatar{
 	position:absolute;
@@ -25,9 +28,13 @@
 	background: url(../img/BlogPostAvatar.png) no-repeat;
 	background-position: center;
 	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 	padding:0px;
 	border: 1px solid #d5d1cc;
-	border-radius:100px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
 	cursor: pointer;
 }
 .BlogPostContentAvatar:hover{
@@ -52,12 +59,13 @@
 	text-align:left;
 	font-size:14px;
 	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 .BlogPostContentTextHead{
 	font-family: "OpenSansSemiBold","Arial","Tahoma","sans-serif";
 	font-size:28px;
 	margin-top:20px;
-/*	line-height:22px; */
 	color: #5B5146;
 }	
 .BlogPostContentTextOther{
@@ -66,8 +74,7 @@
 	margin-top:10px;
 	line-height:20px;
 	color: #8E8071;
-
-}	
+}
 .BlogPostProfile{
 	position:absolute;
 	width:370px;
@@ -75,6 +82,8 @@
 	left:0px;
 	top:344px; 
 	box-sizing:border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
 .BlogPostProfileButton > li{
@@ -122,6 +131,8 @@
 	width:26px;
 	height:18px;
 	border-radius:0 0 0 5px;
+	-webkit-border-radius: 0 0 0 5px;
+	-moz-border-radius: 0 0 0 5px;
 	z-index:1;
 }
 .BlogPostProfileButtonLookText{
@@ -141,6 +152,8 @@
 	width:24px;
 	height:19px;
 	border-radius:0 0 0 5px;
+	-webkit-border-radius: 0 0 0 5px;
+	-moz-border-radius: 0 0 0 5px;
 	z-index:1;
 }
 @-webkit-keyframes messager {
@@ -173,6 +186,8 @@
     -ms-animation:message normal 2s infinite ease-in-out; /* IE */
     animation:message normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
     border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
     background-color: orange;
     left: 68px;
     top: 7px;
@@ -194,10 +209,10 @@
 	top:0px;
 	background: url(../img/BlogPostSprite.png),#f6f1ed no-repeat;
 	background-position: -118px -135px;
-	width:21px;
-	height:18px;
 	z-index:1;
-	border-radius:0 0 5px 0;	
+	border-radius:0 0 5px 0;
+	-webkit-border-radius: 0 0 5px 0;
+	-moz-border-radius: 0 0 5px 0;
 }
 .BlogPostProfileButtonLikeText{
 	position:absolute;

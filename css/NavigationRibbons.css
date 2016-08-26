@@ -17,6 +17,8 @@
     top: 0px;
     background-color: #fff;
     box-shadow: 0 0 12px #ab8b6e;
+    -moz-box-shadow: 0 0 12px #ab8b6e;
+    -webkit-box-shadow: 0 0 12px #ab8b6e;
 }
 .NavigationMenuMyProfile {
     position: absolute;
@@ -29,13 +31,18 @@
     font-weight: bold;
     text-transform: uppercase;
     background-color: #fff;
+    border-top-left-radius: 5px;
     -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    border-bottom-left-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
     cursor: pointer;
     overflow: hidden;
     -webkit-box-sizing: border-box;
     box-shadow: 0 0 12px #ab8b6e;
-
+    -moz-box-shadow: 0 0 12px #ab8b6e;
+    -webkit-box-shadow: 0 0 12px #ab8b6e;
 }
 
 .NavigationMenuMyProfile:hover {
@@ -43,8 +50,12 @@
     height: 174px;
     border-bottom: none;
     background-color: #f8f3f0;
+    border-bottom-left-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
     -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
 }
 
 .NavigationMenuMyProfile a:first-child {
@@ -58,13 +69,14 @@
     padding-top: 26px;
     background-image: url('../img/NavigationRibbonsSpritesheetIco.png');
     background-position:  -454px -130px;
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-top-left-radius: 5px;
     -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
 }
 
-.NavigationMenuMyProfile a:first-child:hover {
-
-}
 .NavigationMenuMyProfile a:nth-child(2) {
     display: block;
     position: relative;
@@ -73,9 +85,12 @@
     font-size: 13px;
     padding-left: 25px;
     line-height: 36px;
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     background-color: #fff;
 }
+
 .NavigationMenuMyProfile a:nth-child(2):hover {
     background-color: #f8f3f0;
 }
@@ -88,7 +103,9 @@
     font-size: 13px;
     padding-left: 25px;
     line-height: 36px;
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     background-color: #fff;
 }
 .NavigationMenuMyProfile a:nth-child(3):hover {
@@ -105,11 +122,18 @@
      font-size: 13px;
      padding-left: 25px;
      line-height: 36px;
+     box-sizing: border-box;
      -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     border-bottom-left-radius: 5px;
      -webkit-border-bottom-left-radius: 5px;
+     -moz-border-radius-bottomleft: 5px;
+     border-bottom-right-radius: 5px;
      -webkit-border-bottom-right-radius: 5px;
-    background-color: #fff;
+     -moz-border-radius-bottomright: 5px;
+     background-color: #fff;
  }
+
 .NavigationMenuMyProfile a:nth-child(4):hover {
     background-color: #f8f3f0;
 }
@@ -129,9 +153,15 @@
     background-image: url('../img/NavigationRibbonsSpritesheetIco.png');
     background-position: -128px -128px;
     background-color: #fff;
+    box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-top-right-radius: 5px;
     -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-bottom-right-radius: 5px;
     -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
     cursor: pointer;
 }
 
@@ -147,7 +177,11 @@
     left: 224px;
     top: 100px;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     box-shadow: 0 0 12px #ab8b6e;
+    -webkit-box-shadow: 0 0 12px #ab8b6e;
+    -moz-box-shadow: 0 0 12px #ab8b6e;
 }
 .NavigationRibbonsSquareFlag {
     position: absolute;

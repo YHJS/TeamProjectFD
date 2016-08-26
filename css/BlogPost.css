@@ -1,0 +1,209 @@
+
+.BlogPost{
+	position:absolute;
+	top: 0px;
+	right: 0px;
+	width:370px;
+	height:392px;
+	background-color:#FFFFFF;
+	border-radius: 5px;
+	z-index:250;
+}	
+.BlogPostBackground{
+	position:absolute;
+	width:370px;
+	height:204px;
+	background-image: url(../img/BlogPostBackground.png);
+	border-radius: 5px 5px 0 0;
+}
+.BlogPostContentAvatar{
+	position:absolute;
+	width:89px;
+	height:89px;
+	left:19px;
+	top:228px;
+	background: url(../img/BlogPostAvatar.png) no-repeat;
+	background-position: center;
+	box-sizing:border-box;
+	padding:0px;
+	border: 1px solid #d5d1cc;
+	border-radius:100px;
+	cursor: pointer;
+}
+.BlogPostContentAvatar:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+	-moz-transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+    transition:all 0.5s ease-in-out;
+}
+.BlogPostContentText{
+	position:absolute;
+	width:242px;
+	height:140px;
+	left:125px;
+	top:206px;
+	padding-top:6px;
+	text-align:left;
+	font-size:14px;
+	box-sizing:border-box;
+}
+.BlogPostContentTextHead{
+	font-family: "OpenSansSemiBold","Arial","Tahoma","sans-serif";
+	font-size:28px;
+	margin-top:20px;
+/*	line-height:22px; */
+	color: #5B5146;
+}	
+.BlogPostContentTextOther{
+	font-family: "OpenSansRegular","Arial","Tahoma","sans-serif";
+	font-size:13px;
+	margin-top:10px;
+	line-height:20px;
+	color: #8E8071;
+
+}	
+.BlogPostProfile{
+	position:absolute;
+	width:370px;
+	height:48px;
+	left:0px;
+	top:344px; 
+	box-sizing:border-box;
+}
+
+.BlogPostProfileButton > li{
+	position:absolute;
+	list-style: none;
+	display: inline-block;
+	margin:0;
+	padding:0;
+	width:122.3333333px;
+	height: 48px;
+}
+.BlogPostProfileButtonLook:hover {
+    content: '';
+	background: url(../img/BlogPostSprite.png),#e8e3df no-repeat;
+	background-position: -442px -135px;
+    cursor: pointer;
+}
+.BlogPostProfileButtonMessage:hover {
+    content: '';
+	background: url(../img/BlogPostSprite.png),#e8e3df no-repeat;
+	background-position:  -115px -453px;
+    cursor: pointer;
+}
+.BlogPostProfileButtonLike:hover {
+    content: '';
+	background: url(../img/BlogPostSprite.png), #e8e3df no-repeat;
+	background-position: -119px -561px;
+    cursor: pointer;
+}
+.BlogPostProfileButton > li:hover:before {
+    content: '';
+    left: 0px;
+    height: 5px;
+    width: 122.3333333px;
+    background-color: #4daf7b;
+    top: 43px;
+    position: absolute;
+}
+.BlogPostProfileButtonLook{
+	position:absolute;
+	left:0px;
+	top:0px;
+	background: url(../img/BlogPostSprite.png), no-repeat #f6f1ed;
+	background-position: -442px -135px;
+	width:26px;
+	height:18px;
+	border-radius:0 0 0 5px;
+	z-index:1;
+}
+.BlogPostProfileButtonLookText{
+	position:absolute;
+	margin:13px 0px 0px 65px;
+	font-family: 'OpenSansBold', Tahoma, Arial, sans-serif;
+	font-size:16.29px;
+	letter-spacing:-0.025em;
+	color: #8E8071;
+}
+.BlogPostProfileButtonMessage{
+	position:absolute;
+	left:124px;
+	top:0px;
+	background: url(../img/BlogPostSprite.png),#f6f1ed no-repeat;
+	background-position: -115px -453px;
+	width:24px;
+	height:19px;
+	border-radius:0 0 0 5px;
+	z-index:1;
+}
+@-webkit-keyframes messager {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
+
+@-moz-keyframes message {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* Firefox */
+@-webkit-keyframes message {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* Webkit */
+@-ms-keyframes message {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* IE */
+@keyframes message {0%{opacity:1;} 50%{opacity:0;} 100%{opacity:1;}} /* Opera and prob css3 final iteration */
+.BlogPostProfileButtonMessageText{
+	position:absolute;
+	margin:13px 0px 0px 68px;
+	font-family: "OpenSansBold","Arial","Tahoma","Sana-serif";
+	font-size:16.29px;
+	letter-spacing:-0.025em;
+	color: #8E8071;
+	-moz-transition:all 1s ease-in-out;
+    -webkit-transition:all 1s ease-in-out;
+    -o-transition:all 1s ease-in-out;
+    -ms-transition:all 1s ease-in-out;
+    transition:all 1s ease-in-out;
+    -moz-animation:message normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation:message normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation:message normal 2s infinite ease-in-out; /* IE */
+    animation:message normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+    border-radius: 50%;
+    background-color: orange;
+    left: 68px;
+    top: 7px;
+    width: 27px;
+    height: 27px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: 250;
+    padding-top: 6px;
+	padding-left: 9px;
+    text-decoration: blink;
+}
+.BlogPostProfileButtonLike{
+	position:absolute;
+	width:123px;
+	height:48px;
+	left:248px;
+	top:0px;
+	background: url(../img/BlogPostSprite.png),#f6f1ed no-repeat;
+	background-position: -118px -135px;
+	width:21px;
+	height:18px;
+	z-index:1;
+	border-radius:0 0 5px 0;	
+}
+.BlogPostProfileButtonLikeText{
+	position:absolute;
+	margin:13px 0px 0px 59px;
+	font-family: "OpenSansBold","Arial","Tahoma","sans-serif";
+	font-size:16.29px;
+	letter-spacing:-0.025em;
+	color: #E86741;
+}

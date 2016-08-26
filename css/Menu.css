@@ -1,0 +1,150 @@
+
+.MenuList {
+    padding-left: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.MenuList li {
+    float: left;
+    width: 157px;
+    border-right: 1px solid #f8f3f0;
+    position: relative;
+    -webkit-box-sizing: border-box ;
+}
+
+.MenuList li:last-child {
+    border-right: none;
+}
+
+.MenuList li > a {
+    display: block;
+    width: 157px;
+    font: 17px normal, "OpenSansBold", Arial, sans-serif;
+    color: #8e8071;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    line-height: 60px;
+    transition: all 200ms linear;
+}
+
+.MenuList > li > a:hover {
+    background-color: #f8f3f0;
+    border-color: #4daf7b;
+
+}
+
+.MenuList > li:first-child > a {
+    border-radius: 5px 0 0 5px;
+}
+
+.MenuList > li:last-child > a {
+    border-radius: 0 5px 5px 0;
+}
+
+.MenuListSubmenu{
+    display: none;
+    padding-left: 0;
+    list-style:none;
+    position: absolute;
+    left: 0px;
+    top: 65px;
+}
+
+.MenuList >li:hover .MenuListSubmenu
+{
+    display: block;
+}
+
+.MenuListSubmenu > li {
+    display: block;
+}
+
+.MenuListSubmenu > li > a {
+    display: block;
+    width: 157px;
+    font: 14px normal, "OpenSansBold", Arial, sans-serif;
+    color: #8e8071;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    padding: 16px 0 13px;
+    transition: all 200ms linear;
+    background-color: #fff;
+}
+
+.MenuListSubmenu > li > a:hover {
+    background-color: #f8f3f0;
+    border-color: #4daf7b;
+}
+
+.MenuListSubmenu > li:first-child a {
+    border-radius:  5px 5px 0 0;
+}
+.MenuListSubmenu > li:last-child a {
+    border-radius:  0 0 5px 5px;
+}
+
+.MenuListIcon {
+    display: inline-block;
+    width: 25px;
+    position: relative;
+}
+
+.MenuListIcon:before {
+    content: '';
+    background-repeat: no-repeat;
+    height: 25px;
+    position: absolute;
+    top: -19px;
+    left: -5px;
+}
+
+.MenuListIconCheckin:before {
+    background-image: url('../img/MenuSpritesheet.png');
+    width: 19px;
+    background-position: -40px -5px;
+    left: 7px;
+}
+
+.MenuListIconEvents:before {
+    background-image: url('../img/MenuSpritesheet.png');
+    width: 25px;
+    background-position: -67px -5px;
+}
+
+.MenuListIconAccount:before {
+    background-image: url('../img/MenuSpritesheet.png');
+    width: 25px;
+    background-position: -5px -5px;
+}
+
+.MenuListIconSettings:before {
+    background-image: url('../img/MenuSpritesheet.png');
+    width: 26px;
+    background-position: -102px -5px;
+}
+
+.MenuListCheckinValue {
+    border-radius: 50%;
+    background-color: #E55E3A;
+    display: inline-block;
+    width: 13px;
+    height: 11px;
+    font: normal 9px "MyriadProRegular", sans-serif;
+    color: white;
+    padding-top: 2px;
+    position: relative;
+    top: -14px;
+    animation: pulse-red 2.5s infinite ease-in;
+}
+
+@keyframes pulse-red {
+    0% { box-shadow: 0 0px 5px rgba(207, 8, 28, 0.5); }
+    50% { box-shadow: 0 0px 20px rgba(207, 8, 28, 0.8); }
+    100% { box-shadow: 0 0px 5px rgba(207, 8, 28, 0.5); }
+}
+

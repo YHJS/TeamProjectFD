@@ -1,0 +1,209 @@
+
+.ProfileContainer{
+	position: absolute;
+	left:0;
+	bottom: 0;
+	width: 283px;
+	height: 312px;
+	background: #ffffff;
+	border-radius: 5px;
+	box-shadow: 0 0 12px #ab8b6e;
+}
+.ProfileContainer:hover{
+	transform: scale(1.05 , 1.05);
+}
+.ProfileCordinatsContainer{
+	height: 500px;
+	width: 500px;
+	border: 3px solid #e96a45;
+	position: absolute;
+	top:100px;
+	left: 400px;
+}
+.ProfileCloseButton{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #ebc85e;
+	position: absolute;
+	top: -25px;
+	right: -25px;
+	border: 2px solid #e96a45;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.ProfileCloseButton:hover{
+	opacity: 1;
+}
+
+.ProfileCloseButton p {
+	margin: 11px;
+	color: white;
+	font-size: 22px;
+}
+.ProfileContentLayer{
+	background-color: rgba(0, 0, 0, 0.65);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 2000;
+	display: none;
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
+}
+.ProfileContainerHeader{
+	width: 283px;
+	height: 124px;
+	margin: 0;
+	background: #b1a599;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow: inset 0px -2px 2px 0px rgba(73, 73, 73, 0.36);
+
+}
+.ProfileContainerHeaderUserIcon{
+	background: url(../img/Profile_UserIcon.png) no-repeat;
+	background-position: 7px 7px;
+	height: 73px;
+	width: 73px;
+	margin: 17px 0 0 20px;
+	padding: 7px;
+	border: 2px solid #8e8276;
+	border-radius: 70px;
+	float: left;
+}
+.ProfileContainerHeaderContent{
+	margin: 32px 0 0 12px;
+	float: left;
+	
+}
+.ProfileContainerHeaderContentTitle{
+	margin: 0 0 0 0;
+	width: 100px;
+	font-size: 17px;
+	color: #ffffff;
+	font-family: 'OpenSansBold', Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: left;
+	line-height:18px;
+}
+.ProfileContainerHeaderContentInfo{
+	margin: 10px 0 0 0;
+	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-size: 17.409px;
+	color: rgba(58, 47, 36, 0.502);
+    -moz-transform: matrix(  0.655,0,0,0.67,-22,-5);
+    -webkit-transform: matrix( 0.655,0,0,0.67,-22,-5);
+    -ms-transform: matrix(  0.655,0,0,0.67,-22,-5);
+}
+.ListMenuContainer {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	height: 167px;
+	background: white;
+	transition-property: all;
+	transition-duration: .4s;
+	transition-timing-function: ease-in-out;
+	overflow: hidden;
+
+}
+.ListMenu{
+	margin: 12px 0;
+	padding: 0;
+	list-style-type:none;
+}
+.ListMenu li{
+	position: relative;
+	height: 41px;
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
+	z-index: 3;
+	overflow: hidden;
+}
+.ListMenu li:hover {
+	height: 123px;
+}
+.ListMenu li a{
+	border-left: 3px solid transparent;
+	display: block;
+	font-size: 16px;
+	padding-left: 10px;
+	text-decoration: none;
+	font-family: 'OpenSansRegular', Arial, sans-serif;
+	color: #8e8071;
+	height: 41px;
+	overflow: hidden;
+	line-height: 40px;
+}
+.ListMenu li a:first-child:hover {
+	border-left: 3px solid #4daf7b !important;
+}
+.ListMenu li a:hover{
+	transition-property: all;
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
+	background: #f8f3f0;
+	border-left: 3px solid #ebc85e;
+	cursor: pointer;
+}
+.ListMenu li a:first-child::before {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	content: '';
+	display: block;
+	background: url(../img/Profile_sprite.png) no-repeat;
+}
+
+.ListMenu .ListMenuContainerEdit a:first-child::before{
+	background-position: -47px 0px;
+	height: 16px;
+	width: 15px;
+}	
+.ListMenu .ListMenuContainerStatistics a:first-child::before{
+	background-position: -15.5px -0.5px;
+	height: 16px;
+	width: 15px;
+}
+
+.ListMenu .ListMenuContainerSettings a:first-child::before{
+	background-position: -31px -1px;
+	height: 16px;
+	width: 15px;
+}
+
+.ListMenu .ListMenuContainerMaps a:first-child::before{
+	background-position: 0px 0px;
+	height: 17px;
+	width:15px;
+}
+.ListMenu .ListMenuContainerEdit a:hover:first-child::before {
+	background-position: -47px -17px;
+	height: 16px;
+	width: 15px;
+	
+}
+.ListMenu .ListMenuContainerStatistics a:hover:first-child::before{
+	background-position: -15.5px -17.5px;
+	height: 16px;
+	width: 15px;
+}
+
+.ListMenu .ListMenuContainerSettings a:hover:first-child::before{
+	background-position: -31px -18px;
+	height: 16px;
+	width: 15px;
+
+}
+
+.ListMenu .ListMenuContainerMaps a:hover:first-child::before{
+	background-position: 0px -16.6px;
+	height: 17px;
+	width:15px;
+
+}

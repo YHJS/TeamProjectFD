@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.Graphic {
+	position: absolute;
+	background-color: #fff;
+	width: 283px;
+	height: 435px;
+	margin: 0 auto;
+	top: 0px;
+	left: 0px;
+	box-shadow: 0 0 12px #ab8b6e;
+	border-radius: 5px;
+}
+.GraphicTop {
+	border-radius: 5px 5px 0 0;
+	position: absolute;
+	width: 283px;
+	height: 151px;
+	background-color: #4bad79;
+	z-index: 1;
+}
+.GraphicTopOverhead {
+	border-radius: 5px 5px 0 0;
+	position: absolute;
+	width: 283px;
+	height: 80px;
+	background-color: #54bc75;
+	z-index: 2;
+}
+.GraphicTopOverheadGeneralCharts {
+	width: 241px;
+	height: 77px;
+	position: absolute;
+	z-index: 4;
+}
+.GraphicTopOverheadGeneralGraphic {
+	width: 283px;
+	height: 151px;
+	position: absolute;
+	z-index: 3;
+	
+}
+.GraphicTopOverheadGeneralTrades {
+	font-family: 'OpenSansRegular', Arial, sans-serif;
+	color: #fff;
+	font-size: 17px;
+}
+.GraphicTopOverheadGeneral {
+	position: absolute;
+	width:90px;
+	height: 17px;
+	top: 22px;
+	left: 18px;
+	
+}
+.GraphicTopOverheadGeneralTradesPercents {
+	position: absolute;
+	width:90px;
+	height: 10px;
+	top: 45px;
+	left: 25px;
+	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-size: 10px;
+	color: #b7dfc2;
+}
+.GraphicBotton {
+	position: absolute;
+	width: 283px;
+	height: 284px;
+}
+.GraphicBottonTime {
+	position: absolute;
+	width:90px;
+	height: 14px;
+	top: 185px;
+	left: 21px;
+	font-family:'OpenSansRegular', Arial, sans-serif;
+	font-size: 11px;
+	color: #b5aca2;
+}
+.GraphicBottonLocation {
+	position: absolute;
+	width:200px;
+	height: 14px;
+	top: 199px;
+	left: 21px;
+	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-size: 17px;
+	color: #8e8071;
+}
+.GraphicBottonTrades {
+	position: absolute;
+	top: 238px;
+	left: 21px;
+	width:120px;
+	height: 68px;
+	background-color: #f6f0ec;	
+}
+.GraphicBottonPlowback {
+	position: absolute;
+	top: 238px;
+	left: 142px;
+	width:120px;
+	height: 68px;
+	background-color: #f6f0ec;
+}
+.GraphicBottonTradesValue {
+	font-family: 'OpenSansSemiBold', Arial, sans-serif;
+	color: #897869;
+	font-size: 14px;
+	padding: 1;
+	display: block;
+	text-align: center;
+	padding: 16px 0 0 0;
+}
+.GraphicBottonTradesDescription {
+	font-family: 'OpenSansSemiBold', Arial, sans-serif;
+	color: #a79583;
+	font-size: 10px;
+	display: block;
+	text-align: center;
+}
+.GraphicBottonShares {
+	color: #9b9387;
+	position: absolute;
+	top: 334px;
+	left: 21px;
+	width: 124px;
+	height: 62px;
+	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-size: 13px;
+	display: inline-block;
+}
+.GraphicBottonChanges {
+	color: #9b9387;
+	position: absolute;
+	top: 334px;
+	left: 168px;
+	width: 94px;
+	height: 62px;
+	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-size: 13px;
+}
+.GraphicBottonChangesTrades {
+	background-color: #4daf7b;
+	position: absolute;
+	top: 23px;
+	left: 0;
+	width: 94px;
+	height: 40px;
+	border-radius: 2px;
+}
+.GraphicBottonSharesFont {
+	position: absolute;
+	top: 23px;
+	left: 0;
+	width: 129px;
+	height: 40px;
+}
+.GraphicBottonSharesOnepart {
+	position: absolute;
+	top: 23px;
+	left: 0;
+	width: 54px;
+	height: 34px;
+}
+.GraphicBottonSharesTwopart {
+	position: absolute;
+	top: 23px;
+	left: 0;
+	width: 129px;
+	height: 34px;
+}
+.GraphicBottonChangesTradesValue {
+	font-family: 'OpenSansRegular', Arial, sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 9px 19px;
+}

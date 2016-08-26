@@ -1,0 +1,190 @@
+
+.NavigationRibbons {
+    width: 304px;
+    height: 172px;
+    bottom: 0px;
+    left:   0px;
+    position: absolute;
+    border-radius: 5px;
+    background: transparent;
+    box-sizing: border-box;
+    font-family: "OpenSansBold", Arial, sans-serif;
+}
+
+.NavigationMenu {
+    position: relative;
+    width: 304px;
+    top: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 12px #ab8b6e;
+}
+.NavigationMenuMyProfile {
+    position: absolute;
+    width: 175px;
+    height: 65px;
+    top: 0px;
+    left: 0px;
+    font-size: 15px;
+    color: #8e8071;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #fff;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-shadow: 0 0 12px #ab8b6e;
+
+}
+
+.NavigationMenuMyProfile:hover {
+    width: 175px;
+    height: 174px;
+    border-bottom: none;
+    background-color: #f8f3f0;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+.NavigationMenuMyProfile a:first-child {
+    display: block;
+    position: relative;
+    width: 175px;
+    height: 65px;
+    top: 0px;
+    left: 0px;
+    padding-left: 60px;
+    padding-top: 26px;
+    background-image: url('../img/NavigationRibbonsSpritesheetIco.png');
+    background-position:  -454px -130px;
+    -webkit-box-sizing: border-box;
+    -webkit-border-top-left-radius: 5px;
+}
+
+.NavigationMenuMyProfile a:first-child:hover {
+
+}
+.NavigationMenuMyProfile a:nth-child(2) {
+    display: block;
+    position: relative;
+    width: 175px;
+    height: 36px;
+    font-size: 13px;
+    padding-left: 25px;
+    line-height: 36px;
+    -webkit-box-sizing: border-box;
+    background-color: #fff;
+}
+.NavigationMenuMyProfile a:nth-child(2):hover {
+    background-color: #f8f3f0;
+}
+
+.NavigationMenuMyProfile a:nth-child(3) {
+    display: block;
+    position: relative;
+    width: 175px;
+    height: 36px;
+    font-size: 13px;
+    padding-left: 25px;
+    line-height: 36px;
+    -webkit-box-sizing: border-box;
+    background-color: #fff;
+}
+.NavigationMenuMyProfile a:nth-child(3):hover {
+     border-left: solid 3px #4daf7b;
+     padding-left: 22px;
+     background-color: #f8f3f0;
+ }
+
+.NavigationMenuMyProfile a:nth-child(4) {
+     display: block;
+     position: relative;
+     width: 175px;
+     height: 36px;
+     font-size: 13px;
+     padding-left: 25px;
+     line-height: 36px;
+     -webkit-box-sizing: border-box;
+     -webkit-border-bottom-left-radius: 5px;
+     -webkit-border-bottom-right-radius: 5px;
+    background-color: #fff;
+ }
+.NavigationMenuMyProfile a:nth-child(4):hover {
+    background-color: #f8f3f0;
+}
+
+.NavigationMenuMyEdit {
+    position: absolute;
+    width: 126px;
+    height: 65px;
+    top: 0px;
+    left: 175px;
+    font-size: 15px;
+    padding-left: 60px;
+    padding-top: 26px;
+    color: #8e8071;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url('../img/NavigationRibbonsSpritesheetIco.png');
+    background-position: -128px -128px;
+    background-color: #fff;
+    -webkit-box-sizing: border-box;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+.NavigationMenuMyEdit:hover {
+    background-color: #f8f3f0;
+}
+
+.NavigationRibbonsSquare {
+    position: absolute;
+    background-color: #fff;
+    width: 67px;
+    height: 72px;
+    left: 224px;
+    top: 100px;
+    border-radius: 5px;
+    box-shadow: 0 0 12px #ab8b6e;
+}
+.NavigationRibbonsSquareFlag {
+    position: absolute;
+    background: url("../img/NavigationRibbonsSaleFlagGreen.png") no-repeat;
+    background-position: right center;
+    left: 224px;
+    top: 100px;
+    width: 71px;
+    height: 72px;
+    z-index:1;
+}
+
+.NavigationRibbonsSquareTextSale,
+.NavigationRibbonsSquareTextValue {
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    width: 60px;
+    height: 70px;
+}
+
+.NavigationRibbonsSquareTextSale {
+    display: block;
+    color: #c2f3de;
+    font-size: 13px;
+    left: 25px;
+    top: 25px;
+}
+
+.NavigationRibbonsSquareTextValue {
+    display: block;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    left: 11px;
+    top: 37px;
+    position: absolute;
+}
+
